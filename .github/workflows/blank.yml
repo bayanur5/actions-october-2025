@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Git clone
-       uses: actions/checkout@v4
+      - name: Git clone
+        uses: actions/checkout@v4
