@@ -7,3 +7,11 @@ resource aws_instance hello {
     instance_type = "t3.micro"
 }
 
+
+terraform {
+  backend "s3" {
+    bucket = "kaizen-bayanurd"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
+}
